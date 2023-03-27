@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ddf2fb0ef8.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            width:100vw;
+            height:1000vh;
+            box-sizing: border-box;
+            background-color: rgb(252, 240, 253);
+            
+        }
+        *
+        
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        .class1{
+            height:170px;
+            position:absolute;
+            left:80px;
+            top:20px;
+            float:left;
+            
+        }
+        .class2{
+            float:right;
+            position:relative;
+            right:10%;
+            top:50px;
+            
+            
+        }
+        .class3{
+            float:right;
+            outline-offset:2px;
+            
+        }
+        #div1{
+            height:90px;
+            width:100%;
+            background-color: rgb(26, 180, 194);
+            position: absolute;
+            top:40%;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            background-color:  rgb(26, 180, 194);;
+
+        }
+        li{
+            float:left;
+        }
+        li a{
+            display:block;
+            color:rgb(228, 228, 254);
+            text-align:center;
+            padding:2px 16px;
+            text-decoration:none;
+        }
+        li a:hover{
+            background-color: coral;
+
+        }
+        .id1{
+            height:80%;
+            width:25%;
+            background-color: rgb(246, 250, 250);
+            position: absolute;
+            top:60%;
+            left:10px;
+            border-radius: 10px;
+        }
+        .id3{
+            height:60%;
+            width:25%;
+            position: absolute;
+            top:60%;
+            right:10px
+
+
+        }
+        .id2{
+            height:70%;
+            width:45%;
+            background-color: rgb(230, 243, 243);
+            position: absolute;
+            top:60%;
+            left:28%;
+        }
+        .div1{
+            background-color :white;
+            border:2px solid maroon;
+            height:18%;
+            width:100%;
+        }
+        .div2{
+            background-color :white;
+            height:18%;
+            width:100%;
+            margin-top:3px;
+        }
+        .div3{
+            box-shadow: 5px 10px 20px gray inset;
+            border:1px solid rgb(11, 11, 106);
+            margin-top: 3px;
+            height:18%;
+            width:100%;
+        }
+        .div4{
+            background-color :white;
+            border:2px solid rgb(42, 60, 141);
+            margin-top: 3px;
+            height:18%;
+            width:100%;
+
+        }
+        .div5{
+            background-color :white;
+            border:1px solid rgb(12, 11, 11);
+            margin-top: 3px;
+            height:18%;
+            width:100%;
+        }
+        .c9{
+            color:maroon;
+        }
+        #oo{
+            height:150px;
+            width:45%;
+            position: absolute;
+            top:730px;
+            left:28%;
+        }
+        .div6{
+            background-color: rgb(82, 191, 242);
+            border-radius: 10px;
+            height:40%;
+            width:30%;
+            float:left;
+        }
+        .div7{
+            background-color: rgb(107, 215, 164);
+            border-radius: 10px;
+            height:40%;
+            width:30%;
+            float:left;
+            margin-left:28px;
+
+        }
+        .div8{
+            background-color: rgb(214, 152, 45);
+            border-radius: 10px;
+            height:40%;
+            width:30%;
+            float:right;
+        }
+        .div9{
+            background-color: rgb(179, 231, 82);
+            border-radius: 10px;
+            height:40%;
+            width:30%;
+            position: relative;
+            top:70px;
+            
+        }
+        .div10{
+            background-color: rgb(242, 82, 194);
+            border-radius: 10px;
+            height:40%;
+            width:30%;
+            position: relative;
+            top:10px;
+            left:200px;
+        }
+        .div11{
+            background-color: rgb(233, 73, 236);
+            border-radius: 10px;
+            height:40%;
+            width:30%;
+            position: relative;
+            bottom: 50px;
+            left:400px;
+
+        }
+        .uu{
+            color: rgb(231, 243, 254);
+            font-size:120%;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+            position: relative;
+            top:5px;
+            left:2px;
+        }
+        .yf{
+            position: relative;
+            bottom: 50px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+            font-size:120%;
+            color: aliceblue;
+        }
+        .div12{
+            background-color: rgb(132, 50, 215);
+            height:120px;
+            width:22%;
+            border:2px solid white;
+            position: relative;
+            top:12%;
+            left:74%;
+            border-radius: 30px;
+           box-shadow:1px 2px 8px 7px #9639ed;
+        }
+        .ff{
+            color:white;
+            text-align: center;
+            font-size: 200%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          
+            
+            
+        }
+        .dropbtn{
+            cursor: pointer;
+            text-decoration:none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            background-color:  rgb(26, 180, 194);
+        }
+
+        .dropdown-content {
+             display: none;
+             position: absolute;
+             width: 100px;
+             height: 250%;
+  
+        }
+
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            
+        }
+
+        .dropdown-content a:hover {
+            background-color: #924545
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            background-color: magenta;
+        }
+
+
+        .oo{
+             text-decoration: none;
+             display: block;
+             
+        }
+        .div13{
+            background-color: rgb(132, 50, 215);
+            height:50px;
+            width:12%;
+            border:2px solid white;
+            position: relative;
+            top:12%;
+            left:5px;
+            border-radius: 30px;
+           box-shadow:1px 2px 8px 7px #9639ed;
+        
+        }
+        .div14{
+            background-color: rgb(132, 50, 215);
+            height:50px;
+            width:18%;
+            border:2px solid white;
+            position: relative;
+            top:12.2%;
+            left:5px;
+            border-radius: 30px;
+           box-shadow:1px 2px 8px 7px #9639ed;
+        }
+        .div15{
+            background-color: rgb(132, 50, 215);
+            height:83px;
+            width:22%;
+            border:2px solid white;
+            position: relative;
+            top:12.7%;
+            left:5px;
+            border-radius: 30px;
+           box-shadow:1px 2px 8px 7px #9639ed;
+        }
+        .div16{
+            height:1000px;
+            width:22%;
+            position: relative;
+            top: 6.8% ;
+            left:74%;
+
+            
+        }
+        .tk{
+            color:crimson;
+            font-size: medium;
+            text-align: center;
+        }
+        .div17{
+            width:99%;
+            height:12%;
+            background-color: rgb(49, 49, 132);
+            position: relative;
+            top: 105px;
+            
+        }
+        .div18{
+            width:21%;
+            background-color: aliceblue;
+            height:57%;
+            position: relative;
+            left:17px;
+            top:20px;
+            border-radius: 5px;;
+        }
+        
+        
+        
+        .div19{
+            background-color: aliceblue;
+            height:75%;
+            width:15%;
+            position: relative;
+            bottom:55%;
+            left: 28%;
+            border-radius: 5px;
+
+        }
+        .div20{
+            background-color: aliceblue;
+            height:75%;
+            width:15%;
+            position: relative;
+            bottom:130%;
+            left: 44%;
+            border-radius: 5px;
+
+        }
+        .div21{
+            background-color: aliceblue;
+            height:75%;
+            width:15%;
+            position: relative;
+            bottom: 205%;
+            left: 60%;
+            border-radius: 5px;
+        }
+        .div22{
+            width:20%;
+            background-color: aliceblue;
+            height:57%;
+            position: relative;
+            left:78%;
+            bottom:1910px;
+            border-radius: 5px;;
+        }
+        .div23{
+            border:1px solid rgb(93, 93, 245);
+            width:50%;
+            height:30px;
+            position: relative;
+            top:8%;
+            left:45%;
+            border-radius:5px;
+
+        }
+        .div24{
+            border:1px solid rgb(93, 93, 245);
+            width:50%;
+            height:30px;
+            position: relative;
+            top:3%;
+            left:45%;
+            border-radius:5px;
+
+        }
+        .div25{
+            border:1px solid rgb(93, 93, 245);
+            width:50%;
+            height:30px;
+            position: relative;
+            left:45%;
+            border-radius:5px;
+
+        }
+       
+        
+        .div27{
+            height:2%;
+            width:30%;
+            position: relative;
+            top:12%;
+            left: 35%;
+            border-radius: 10px;
+            background-color: rgb(28, 28, 95);
+        }
+        .div28{
+            text-align: center;
+            color: rgb(53, 125, 198);
+        }
+        .div30{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            background-color:  rgb(26, 180, 194);
+            position: relative;
+            top:113px;
+
+        }
+        .div29{
+            position: relative;
+            left:500px;
+        }
+        .div29 a{
+            display:block;
+            color:rgb(228, 228, 254);
+            text-align:center;
+            padding-top:20px ;
+            padding-bottom: 10px;
+            text-decoration:none;
+        }
+        .div29 a:hover{
+            background-color: rgb(225, 238, 249);
+            color:rgb(47, 47, 106);
+        }
+        .div99{
+            background-color: black;
+            height:7%;
+            width:105%;
+            position: relative;
+            bottom:18%;
+        }
+        .div98{
+            height: 60%;
+            width:22%;
+            position:relative;
+            left:30px;
+            top:30px;
+
+        }
+        .div95{
+            height:17%;
+            width:25%;
+            background-color: aliceblue;
+            border-top:5px dotted;
+            position: relative;
+            top:2.5%;
+            left:10px;
+            border-bottom:2px solid;
+            border-left: 2px solid;
+            border-right: 2px solid;
+        }
+        .div94{
+            background-color: rgb(239, 231, 220);
+            height:8%;
+            width:100%;
+        
+        }
+        .div93{
+            background-color:aliceblue;
+            width:70%;
+            height:23%;
+            position: relative;
+            left:28%;
+            bottom:14.7%;
+        }
+        .div91{
+            width:99%;
+            height:5%;
+            background-color: rgb(49, 49, 125);
+            position: relative;
+            bottom:14%;
+        }
+        .div86{
+            height: 5.5%;
+            width:65%;
+            position: relative;
+            left:20px;
+            background-color: aqua;
+            bottom:13.9%;
+        }
+        .div85{
+            height:8%;
+            width:23%;
+            position:relative;
+            left:70%;
+            bottom: 19.4%;
+            
+
+        }
+        .div97{
+            height: 60%;
+            width:22%;
+            position:relative;
+            left:340px;
+            bottom:208px;
+
+        }
+        .div80{
+            height: 60%;
+            width:22%;
+            position:relative;
+            left:660px;
+            bottom:447.5px;
+
+        }
+        .div81{
+            height: 60%;
+            width:22%;
+            position:relative;
+            left:1000px;
+            bottom:685px;
+
+        }
+        .div82{
+            height:30%;
+            width:105%;
+            position: relative;
+            bottom:170%;
+            left:30px;
+            
+
+        }
+        .div82 a{
+            text-decoration: none;
+
+        }
+        .div82 a:link{
+            color:yellow;
+        }
+        .div82 a:hover{
+            text-decoration: underline;
+
+        }
+        .div78{
+            
+            height:90%;
+            width:20%;
+            position: relative;
+            left:60%;
+            bottom: 50px;
+
+        }
+    </style>
+
+        
+</head>
+<body>
+    <div>
+        <img src="univ_header2.png" class="class1">
+      <!--  <i class="fa-solid fa-envelope" class="class2"></i>-->
+    </div>
+    <div class="class2">
+       <P><i class="fa-solid fa-envelope"></i>&nbsp;
+        |  Email : enquiry@aknu.edu.in</p><br><br>
+        <p> <i class="fa-regular fa-clock"></i>&nbsp;&nbsp;| Office Timings :Mon-Sat : 10:00AM - 5:00PM</p><br>
+        <p> <i class="fa-brands fa-square-facebook" style="font-size:50px;color:rgb(43, 43, 92)"></i>&nbsp;&nbsp;<i class="fa-brands fa-twitter" style="font-size: 50px;color:rgb(112, 161, 230)"></i>&nbsp;&nbsp;<i class="fa-brands fa-square-instagram" style="font-size: 50px;color:rgb(141, 41, 137)"></i></p>
+    </div>
+    <div id="div1" >
+        <ul>
+            <b><li><i class="fa-solid fa-house-chimney"style="color:aliceblue;padding-top:5px;padding-left: 20px;" class="c1"></i><br><a href="#home "class="c2">HOME</a></li>
+           <div class="dropdown">
+             <li><i class="fa-solid fa-building-columns" class="dropbtn" style="color:aliceblue;padding-left:15px;padding-top:5px;"></i><a href="#aboutus">ABOUT US</a></li>
+             <div class="dropdown-content">
+             <a href="#" class="oo">LOGO</a>
+             <a href="#" class="oo">VISSION & MISSION</a>
+             <a href="#" class="oo">PROFILE</a>
+             <a href="#" class="oo">ORGANOGRAM</a>
+             <a href="#" class="oo">UNIVERSITY SONG</a>
+             <a href="#" class="oo">ESTABLISHMENT ACT</a>
+             </div>
+            </div>
+            <li><i class="fa-solid fa-user-group" style="color: aliceblue;padding-top: 5px;padding-left:20px"></i><a href="#Administration">ADMINISTRATION</a></li>
+            <li><i class="fa-solid fa-user" style="color: aliceblue;padding-top: 5px;padding-left: 20px;"></i><a href="#admissions">ADMISSIONS</a></li>
+            <li><i class="fa-solid fa-magnifying-glass" style="color:aliceblue;padding-left: 20px;padding-top: 5px;"></i><a href="#research">RESEARCH</a></li>
+            <li><i class="fa-thin fa-globe" style="color: aliceblue;padding-left: 20px;padding-top: 5px;"></i><a href="#facilities">FACILITIES</a></li>
+            <li><i class="fa-solid fa-graduation-cap" style="color: aliceblue;padding-left: 20px;padding-top: 5px;"></i><a href="#studentcorner">STUDENT CORNER</a></li>
+            <li><i class="fa-solid fa-graduation-cap" style="color: aliceblue;padding-left: 20px;padding-top: 5px;"></i><a href="#certificates">CERTIFICATES</a></li>
+           <div class="dropdown">
+             <li><i class="fa-solid fa-address-card" class="dropbtn" style="color: aliceblue;padding-left: 20px;padding-top: 5px;"></i><a href="#contactus">CONTACT US</a></li></b>
+             <div class="dropdown-content">
+             <a href="#" class="oo">link1</a>
+             <a href="#" class="oo">link2</a>
+             </div>
+            </ul>
+        </ul>
+    </div>
+     <div class="c3">
+        <div class="id1">
+    
+            <img src="GCR-VC.jpg" style="width:100%;height:40%;position: relative;top:70px;">
+           <b> <p style="position:relative;top:80px;left:70px;font-size: large;color:cadetblue">Prof. G.V.R. PRASADA RAJU</p><br>
+            <p style="position:relative;top:80px;left:250px;font-size:large;color:cadetblue">(FAC)</p><br>
+            <p style="position: relative;top:70px;left:180px;font-size: larger;color:cadetblue">Vice Chancellor</p></b>
+        </div>
+        <div class="id2">
+            <marquee>
+            <img src="AKNU Library.jpg" style="width: 100%;height:100%;">
+            <img src="AKNU MSN Campus - KKD.jpg" style="width:100%;height:100%">
+            </marquee>
+        
+        </div>
+        
+        <div class="id3">
+            <div class="div1">
+                <i class="fa-solid fa-phone-volume" style="color: maroon;position: relative;top:20px;left:30px;font-size:20px;"></i><p style="text-align: center;color: rgb(151, 17, 17);position: relative;bottom: 15px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>DIAL UP NANNAYA<br>1800 891 1801</b></p>
+            </div>
+            <div class="div2">
+                <img src="n_vani.jpg" style="width:100%;height:100%">
+            </div>
+
+            <div class="div3">
+                <i class="fa-brands fa-youtube" style="color: red;font-size:40px;position: relative;left:10px;"></i><p style="text-align: center;position: relative;bottom: 30px;color:rgb(34, 34, 140);font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-shadow: 1px 2px rgb(37, 37, 49);font-size:120%;"><b>NANNAYA NEWS TV</b></p>
+
+            </div>
+            <div class="div4"> 
+                <i class="fa-solid fa-hand-holding-droplet" style="color:red;font-size:250%;position: relative;left:5px;top:5px;"></i> <P style="text-align: center;font-size:120%;color: red;position: relative;bottom:30px;right:5px;"><b>BLOOD</P>
+                <p style="text-align: center;color: blue;position: relative;bottom:30px;">DONOR HUB</b></p>
+            </div>
+            <div class="div5"><p style="text-align: center;margin-top: 29px;color:green;font-size:120%;"><i><b>Complaint Management System</b></i></p>
+            </div>
+        </div>
+     </div>
+     <div id="oo">
+        <div class="div6">
+            <p class="uu">University College Of Arts And Commerce</p>
+        </div>
+        <div class="div7">
+            <p class="uu">University College Of Science and Tech</p>
+        </div>
+        <div class="div8">
+            <p class="uu">University College of Engineering</p>
+        </div>
+        <div class="div9">
+            <p class="yf">University College Of Education</p>
+        </div>
+        <div class="div10">
+            <p class="uu">A.K.N.U M.S.N campus Kakinada</p>
+        </div>
+        <div class="div11">
+            <p class="uu">Aknu Campus Tadepalligudem</p>
+        </div>
+     </div>
+     <div class="div12">
+        <p class="ff">Information for<br>International Students</p>
+
+     </div>
+     <div class="div13">
+        <p style="text-align: center;color: aliceblue;position: relative;top:15px;font-size:20px;">Best Practices</p>
+
+     </div>
+     <div class="div14">
+        <p style="text-align: center;color: aliceblue;position: relative;top:15px;font-size: 20px;">Institutional Distinctiveness</p>
+     </div>
+     <div class="div15">
+        <p style="text-align: center;color: aliceblue;position:relative;top:15px;font-size: 20px;">Online Fee Payment link <br>for applying certificates</p>
+
+     </div>
+     <div class="div27">
+        <p style="color: aliceblue;text-align: center;font-size: xx-large;position: relative;top:30px;"> AKNU LMS</p>
+     </div>
+     <div class="div16">
+        <p class="tk"><b><i class="fa-solid fa-arrow-right"></i>&nbsp;COLLEGE DEVELOPMENT<br>COUNCIL<br><br>
+            <i class="fa-solid fa-arrow-right"></i>&nbsp; UG CELL&nbsp;&nbsp;<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;ACADEMIC AFFAIRS<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;STUDENT AFFAIRS<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;EXAMINATIONS<br>
+            <br><i class="fa-solid fa-arrow-right"></i>&nbsp;INTERNAL QUALITY ASSURANCE<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;CELL(IQAC)<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;
+            NAAC<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;NIRF<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;
+            ISO-QUALITY MANUAL<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;
+            ISO-RISK AND OPPORTUNITIES<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;ISO-STANDARD MANUAL<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;
+            ISO-QUALITY POLICY<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;ACAMEDIC SENATE<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;
+            NATIONAL COUNCIL FOR TEACHER EDUCATION<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;
+            SPRUHA-PSYCOLOGY ALUMNI<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;
+            CODE OF CONDUCT TEACHERS<br><br><i class="fa-solid fa-arrow-right"></i>&nbsp;CODE OF CONDUCT FOR STUDENTS
+        </p>
+        
+
+     </div>
+     <div class="div17">
+        <p style="text-align: center;color: white;font-size:xx-large;">LATEST NEWS & EVENTS<p style="text-align: center;position: relative;bottom:15px;color: aliceblue;">___________________________________________________</p></p>
+        <div class="div18">
+            <img src="new.jpeg" style="width: 90%; height:90%;position: relative;top:15px;left:15px;">
+        </div>
+        <div class="div19">
+            <img src="18-10-2022.jpeg" style="width:98%;height: 70%;position: relative;left:2px;" >
+            <p style="color: rgb(44, 44, 142);font-size: large;text-align: center;">GUEST LECTURE SERIES</p>
+            <p style="color:crimson;text-align: center;">Topic-1<br>Topic-2<br>Topic-3</p>
+            <div class="div25">
+                <p style="text-align: center;position:relative;color:rgb(68, 102, 181);top:7px;font-size: small;">
+                 Read More
+                 </p>
+            </div>
+        </div>
+        <div class="div20">
+            <img src="International dance day.jpeg" style="width:98%;height:70%;position: relative;left:2px  " >
+            <p style="color: rgb(44, 44, 142);font-size: large;text-align: center;">INTERNATIONAL <br>DANCE DAY-<br>2022</p>
+            <p style="color:crimson;text-align: center;">Event At: ANUR Campus</p>
+            <div class="div24">
+                <p style="text-align: center;position:relative;color:rgb(68, 102, 181);top:7px;font-size: small;">
+                Read More
+                </p>
+            </div>    
+        </div>
+        <div class="div21">
+            <img src="NAEST-16-07-2022.jpg" style="height: 70%;width:98%;position: relative;left: 2px;">
+            <p style="color: rgb(44, 44, 142);font-size: large;text-align: center">NAEST-2022</p><br>
+            <p style="color:crimson;text-align: center;">Exam On</p>
+            <div class="div23">
+                <p style="text-align: center;position:relative;color:rgb(68, 102, 181);top:7px;font-size: small;">
+                    Read More
+                </p>
+             </div>
+        </div>
+        <div class="div22">
+            <img src="new2.jpeg" style="height:90%;width:90%;position:relative;left:10px;top:10px;">
+        </div>
+     </div>  
+     <div class="div26">
+        <ul class="div30">
+            <li class="div29"><i class="fa-thin fa-square" style="color:azure;position: relative;top:38px;color:blue"></i><a href="#"><p class="div31">Circular</p></a></li>
+            <li class="div29"><i class="fa-thin fa-square" style="color:azure;position: relative;top:38px;color:blue"></i><a href="#"><p class="div31">Jobs</p></a></li>
+            <li class="div29"><i class="fa-thin fa-square" style="color:azure;position: relative;top:38px;color: blue;"></i><a href="#"><p class="div31">Tenders</p></a></li>
+        </ul>
+     </div> 
+     <div class="div95">
+        <div class="div94">
+            <i class="fa-sharp fa-solid fa-square" style="position:relative;top:25px;"></i><p style="position: relative;top:1px;left:30px;font-size: x-large;">RESULTS</p>
+        </div>
+        <p style="font-size: small;color: rgb(77, 150, 206);">
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i> UG IV Sem Regular 2020 A.B. Revaluation Results - Aug 2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>LAW Special Drive Results - OCT 2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>PG II SEMESTER (REGULAR & BACKLOG) RESULTS - SEP 2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>LLM II SEMESTER (REGULAR & BACKLOG) RESULTS - SEP 2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>B.Ed, B.P.Ed & D.P.Ed - SPECIAL DRIVE EXAMINATIONS AT THE END OF I, II, III & IV SEMESTERS - OCTOBER 2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i> Law RV Results Aug - 2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>B.Pharmacy - II,IV & VII - Semesters (Regular & Backlog) Results - Aug/Sep/Nov - 2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i> Pre Ph.d Results (Chemistry) December - 2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>B.A , B.Com, B.Sc II Semester (Regular & Backlog ) Results September-2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>Special drive - 2012 Batch CCS I, II & III yr Results- N22<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>B.Ed, B.P.Ed & D.P.Ed - IV Semester (Regular & Backlog) RV Results - Aug/Sep - 2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>Special drive - 2013 & 14 Batch CS I, II & III yr Results- N22<br><br>
+            &nbsp;<i class="fa-thin fa-square" stye="color:crimson"></i>PG IV Semester (Regular & Backlog) RV Results Aug - 2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>Pre Ph.d Results - December - 2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>B.Tech - II Semester (Regular & Backlog) Results - September - 2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>PG Diploma in Mudlogging I Semester Result September-2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>B.Ed, B.P.Ed & D.P.Ed - II Semester (Regular & Backlog) Results - October -2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>PG Courses I Semester RV Results June-2022<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: crimson;"></i>PG Courses III Semester RV Results March-2022
+        </p>
+
+     </div>
+     <div class="div93">
+        <p>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>09/03/2023 :: I Semester M.Sc. / M.A. / M.Com./M.Ed./M.P.Ed Examinations Time - Tables April - 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>09/03/2023 :: I Semester M.Sc. / M.A. / M.Com./M.Ed./M.P.Ed Examinations Time - Tables April - 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i> 09/03/2023 :: I Semester MBA / MBA (T&H) / MCA Theory Examinations Time - Tables April - 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>09/03/2023 :: III Semester M.Sc. / M.A. / M.Com./M.Ed./M.P.Ed Theory Examinations Time - Tables April - 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>09/03/2023 :: UG CBCS Professional Courses LLB, BA.LLB & BBA.LLB I, VI, VIII & X Semesters (Regular & Backlog) End Examinations Notification May, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>06/03/2023 :: CIRCULAR - UG CBCS Professional Courses B.Tech VIII Semester Project Work Schedule March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>06/03/2023 ::UG CBCS Professional Courses B.Pharmacy VIII Semesters (Regular) End Examinations Time Table March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>06/03/2023 :: UG CBCS Professional Courses B.Tech I & VI Semesters (Regular & Backlog) End Examinations Time Table March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>06/03/2023 :: CIRCULAR - UG CBCS III Semester (Regular & Backlog) Practical Examinations Schedule March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i> 06/03/2023 ::UG CBCS V Semester (Regular) End Examinations (for 2020-21AB only) Time Table March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i> 06/03/2023 :: UG CBCS V Semester (Backlog) End Examinations (for 2017, 2018 & 2019AB only) Time Table March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i> 06/03/2023 :: UG CBCS V Semester (Backlog) End Examinations (for 2017, 2018 & 2019AB only) Time Table March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i> 06/03/2023 :: UG CBCS V Semester (Backlog) End Examinations (for 2017, 2018 & 2019AB only) Time Table March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i> 06/03/2023 :: UG CBCS V Semester (Backlog) End Examinations (for 2017, 2018 & 2019AB only) Time Table March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>02/03/2023 :: CIRCULAR - AKNU- ODD Semester Examinations March/ April 2023- Special Permission - Orders<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>02/03/2023 :: UG CBCS Semester End Examinations Deposit Centres 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>02/03/2023 :: ANUR - UG EXAMS - III Semester (Regular & Backlog ) Scribe List<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>01/03/2023 :: CIRCULAR - AKNU- UG III Semester examinations March 2023- Change of certain Jumbling centres- Regarding.<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>01/03/2023 :: ANUR - UG EXAMS - III Semester (Regular & Backlog ) Scribe Students list<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>25/02/2023 :: UG CBCS III Semester (Regular & Backlog) End Examinations (w.e.f 2017AB) Jumbling Centres March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>23/02/2023 ::Revised Schedule - UG CBCS I Semester(Regular) End Examinations Notification March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>21/02/2023 :: PG III & V Semester MBA, MCA Examinations Jumbling Centers Feb/ March 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>17/02/2023 :: UG CBCS Professional Courses LLB, BA.LLB & BBA.LLB III Semester(R & B) End Examinations Jumbling Centres February, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>14/02/2023 :: UG CBCS III Semester (Regular & Backlog) End Examinations (for 2020 & 2021 AB) Time Table March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>14/02/2023 :: UG CBCS III Semester (Backlogs) End Examinations (for 2017, 2018 & 2019 AB) Time Table March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i> 09/02/2023 ::PG Instant Examination Notification - February 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>09/02/2023 :: PG (MBA, MBA (T&H) & MCA) III & V Semester Examination Time Table Feb/March - 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>09/02/2023 :: UG CBCS Professional Courses LLB, BA.LLB & BBA.LLB III Semester (Regular & Backlog) End Examinations Time Table February, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>06/02/2023 :: PG LLM IIISemester Examination Time - Table; Feb,2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>03/02/2023 ::UG CBCS I Semester(Regular) End Examinations (for 2022-23 AB only) Notification March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>03/02/2023 ::UG CBCS Professional Courses B.Tech I, VI & VIII Semesters (R&B) and B.Pharmacy VIII Semester (R) End Examinations Notification March, 2023<br><br>
+            &nbsp;<i class="fa-thin fa-square" style="color: rgb(106, 152, 226);"></i>03/02/2023 ::PG I & III Semester MA, M.Com, M.Sc., M.Ed. & M.P.Ed. Theory Examinations Notification - March 2023
+
+        </p>
+        <p style="color: rgb(108, 169, 219);position:relative;top:30px;left:10px;">Read More...</p>
+
+     </div>
+     <div class="div91">
+        <P style="color: white;text-align: center ;font-size:xx-large;position: relative;top:17px">ENCHANCE YOUR KNOWLEDGE</P>
+        <p style="color: aliceblue;position: relative;left:30%;">_______________________________________________________________</p>
+        <marquee>
+        <div class="div90">
+            <img src="04.jpg" style="float: left;width:25%;position: relative;top:20px;">
+        </div>
+        <div class="div89">
+            <img src="02.jpg" style="float:left;width:25%;position: relative;top:20px;">
+
+        </div>
+        
+        
+        <div class="div88">
+
+            <img src="J-Gate.jpg" style="float:left;width:24.5%;position: relative;top:20px;">
+        </div>
+        <div class="div87">
+            <img src="03.jpg" style="float:left;width:25%;position: relative;top:20px;">
+        </div>
+        </marquee>
+     </div>
+     <div class="div86">
+        <iframe width="850" height="450" src="https://www.youtube.com/embed/Xcfj6Hexj9A" title="NANNAYA UNIVERSITY SONG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     </div>
+     <div class="div85">
+        <img src="Governor Report -1.jpg" style="width:99%;height: 99%;">
+     </div>
+     <div class="div99">
+        <div class="div98">
+            <p style="color: coral;">About Us<br><br><hr></p><br>
+            <p style="color: aliceblue;font-size:small">University Profile<br><br>
+            University Song<br><br>Logo</p>
+        </div>
+        <div class="div97">
+            <p style="color: coral;">Administartion<br><br><hr></p><br>
+            <p style="color:aliceblue;font-size:small">
+            Vice Chancellor<br><br>Executive Councellor<br><br>
+            Administratve Role</p>
+            
+        </div>
+        <div class="div80">
+            <p style="color: coral;">Academics<br><br><hr></p>
+            <br><p style="color:aliceblue;font-size:small;">Acxademic Program<br><br>
+            Syallabus<br><br>Affilate Colleges</p>
+        </div>
+        <div class="div81">
+            <p style="color:coral">General Information<br><br><hr></p>
+            <br><p style="color:aliceblue;font-size:small;">
+            RTI 4(1)B Data<br><br>University Hostels<br><br>Alumni</p>
+        </div>
+
+     
+        <div class="div82">
+            <p><hr></p><br>
+            <p style="font-size:small;color:aliceblue"><a href="#">Contact US :</a>Adikavi Nannaya University,Raja Raja Narendra Nagar,
+            Rajamahendravaram-533296,Andhra Pradesh,India.<br><br>
+            Copyright &#169;<a href="#"> 2021 Adhikavi Nannaya University.</a> All right Reserved.</p>
+        
+            <div class="div78">
+            <p style="color: aliceblue;font-size: xx-large;text-align: center;">Total Visitors:</p>
+            <br><div style="height:29%;width:70%;position: relative;left:50px;border-radius: 10px;">
+            <p style="color: azure;text-align:center;font-size:xx-large;position: relative;bottom:2px;border:2px solid white;border-radius:5px;">69629785</p></div>
+            </div>
+        </div>
+
+        
+     </div>
+     
+
+
+    
+</body>
+</html>
